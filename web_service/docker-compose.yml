@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  ml-webserver:
+    container_name: ml-webserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "
+             python manage.py runserver 0.0.0.0:8000
+             "

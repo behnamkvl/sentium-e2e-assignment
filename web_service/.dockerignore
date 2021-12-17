@@ -1,0 +1,13 @@
+.vscode
+.git*
+.env*
+
+env/
+venv/
+
+.cache*
+.dockerignore*
+Dockerfile*
+docker-compose*
+Dockerrun.aws.json
+bitbucket-pipelines.yml
